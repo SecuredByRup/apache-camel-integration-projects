@@ -1,5 +1,11 @@
 # Apache Camel XML DSL & Enterprise Integration Patterns Lab
 
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Apache Camel](https://img.shields.io/badge/Apache_Camel-8C1515?style=for-the-badge&logo=apache-camel&logoColor=white)](https://camel.apache.org/)
+[![Apache Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)](https://maven.apache.org/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+
 A production-ready Enterprise Application Integration (EAI) project demonstrating file routing, message aggregation, content-based routing, error handling via Dead Letter Channel (DLC), and route monitoring using **Apache Camel (XML DSL)** and **Spring Boot**.
 
 ## 🛠️ Tech Stack & Key Technologies
@@ -84,24 +90,17 @@ To run automated unit tests:
 mvn clean test
 ```
 
-## 📊 Verification & Screenshots
-
-To organize your repository, save your captured screenshots inside a `screenshots/` directory with the following recommended names:
-1. `screenshots/project-structure-and-build.png` (from `Screenshot (540)_2.png`)
-2. `screenshots/camel-routes-startup.png` (from `Screenshot (541)_2.png`)
-3. `screenshots/batch-output-verification.png` (from `Screenshot (543).jpg`)
-
 ### 1. Project Structure and Clean Build
 Verifies project layout via `tree -L 3` and successful compilation with `mvn clean compile`.
-![Project Structure and Build](screenshots/project-structure-and-build.png)
+![Project Structure and Build](images/01-project-structure-and-build.png)
 
 ### 2. Application Startup & Route Loading
 Confirms Spring Boot initialization and Apache Camel route deployment.
-![Camel Routes Startup](screenshots/camel-routes-startup.png)
+![Camel Routes Startup](images/02-camel-routes-startup.png)
 
 ### 3. Aggregated Batch Output Verification
 Displays generated `batch-*.json` files and content inspection confirming successful message aggregation.
-![Batch Output Verification](screenshots/batch-output-verification.png)
+![Batch Output Verification](images/03-batch-output-verification.png)
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
