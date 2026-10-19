@@ -1,0 +1,2 @@
+FALLBACK_PROCESSED: Alternative fallback test - Message 1
+ [Processed via fallback mechanism]

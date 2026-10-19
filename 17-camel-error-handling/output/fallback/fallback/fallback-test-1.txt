@@ -1,0 +1,2 @@
+FALLBACK_PROCESSED: Fallback test message - Primary processing
+ [Processed via fallback mechanism]

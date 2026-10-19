@@ -1,0 +1,2 @@
+Processed successfully: Alternative fallback test - Message 2
+ (attempt #2)
