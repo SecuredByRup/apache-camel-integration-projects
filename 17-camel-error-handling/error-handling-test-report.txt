@@ -1,0 +1,53 @@
+=== CAMEL ERROR HANDLING LAB TEST REPORT ===
+Generated on: Mon Oct 19 09:11:37 UTC 2026
+=========================================
+
+=== CONFIGURATION SUMMARY ===
+- Retry Strategy: Max 3 retries, 2 second delay
+- DLQ Strategy: Max 2 retries, 1 second delay
+- Fallback Strategy: Immediate fallback on failure
+- Advanced Handling: Exception-specific routing
+
+=== PROCESSING RESULTS ===
+=== Error Handling Performance Analysis ===
+Analysis timestamp: Mon Oct 19 09:11:37 UTC 2026
+
+Retry Strategy:
+  Successfully processed: 13 messages
+
+Dead Letter Queue Strategy:
+  Successfully processed: 5 messages
+  Failed (sent to DLQ): 8 messages
+  Success rate: 38.46%
+
+Fallback Strategy:
+  Primary processing: 3 messages
+  Fallback processing: 9 messages
+  Primary success rate: 25.00%
+
+Advanced Error Handling:
+  Successful processing: 14 messages
+  Validation errors: 0 messages
+  Runtime errors: 0 messages
+  General errors: 5 messages
+
+Total messages processed across all strategies: 57
+
+=== ERROR PATTERNS ANALYSIS ===
+Retry attempts found: 87
+DLQ routing events: 62
+Fallback processing events: 61
+
+=== SAMPLE ERROR MESSAGES ===
+Recent error log entries:
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryTask.redeliver(RedeliveryErrorHandler.java:893)
+				at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryTask.doRun(RedeliveryErrorHandler.java:818)
+				at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$RedeliveryTask.run(RedeliveryErrorHandler.java:726)
+[Camel (camel-1) thread #1 - file://input/retry] WARN org.apache.camel.processor.errorhandler.DefaultErrorHandler - Failed delivery for (MessageId: 0F04D8D624825A0-0000000000000030 on ExchangeId: 0F04D8D624825A0-0000000000000030). On delivery attempt: 0 caught: java.lang.Exception: Simulated general exception for message: Retry load test message 8 - Mon Oct 19 09:10:24 UTC 2026
+
+=== RECOMMENDATIONS ===
+1. Monitor DLQ messages regularly for business impact
+2. Adjust retry delays based on downstream system capabilities
+3. Implement alerting for high failure rates
+4. Consider circuit breaker patterns for external dependencies
+

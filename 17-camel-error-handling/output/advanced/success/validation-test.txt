@@ -1,0 +1,2 @@
+Processed successfully: VALIDATE - This should trigger validation error
+ (attempt #1)

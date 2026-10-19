@@ -1,0 +1,2 @@
+Processed successfully: Fallback test message - Should trigger fallback
+ (attempt #2)
