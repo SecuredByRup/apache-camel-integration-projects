@@ -1,0 +1,1 @@
+INSERT INTO orders (order_number, customer_id, total_amount, status) SELECT 'ORD-1001', customer_id, 1250.00, 'PROCESSED' FROM customers WHERE customer_code = 'CUST001'

@@ -1,0 +1,8 @@
+ORDER CONFIRMATION
+==================
+Order Number: ORD-1003
+Customer: Tech Solutions Inc
+Email: orders@techsolutions.com
+Total Amount: $1250.00
+Tier: HIGH
+Status: PROCESSED
