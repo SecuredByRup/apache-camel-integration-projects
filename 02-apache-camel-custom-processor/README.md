@@ -55,7 +55,7 @@ custom-processor-lab/
                     └── CustomProcessorRouteTest.java
 ```
 
-![Project Directory Structure](screenshots/project_directory_structure.png)
+![Project Directory Structure](images/project_directory_structure.png)
 *Figure 1: Verification of project structure using the `tree` utility inside the lab instance.*
 
 ---
@@ -84,7 +84,7 @@ mvn exec:java -Dexec.mainClass="com.alnafi.camel.lab4.CustomProcessorApplication
 
 Below is a capture of the main application running, demonstrating timer-triggered messages flowing through custom processors, transforming payloads, adding custom headers, and stopping cleanly:
 
-![Application Execution Logs](screenshots/application_execution_and_logging.png)
+![Application Execution Logs](images/application_execution_and_logging.png)
 *Figure 2: Terminal execution log showing timer events, payload transformation (`HELLO FROM TIMER ROUTE`), custom header enrichment (`ProcessedBy=MessageTransformProcessor`), and graceful shutdown.*
 
 ---
@@ -102,7 +102,7 @@ mvn test
 ### Test Execution Results
 All test cases execute successfully with zero failures or errors, validating route behavior, transformation logic, and message enrichment:
 
-![Test Suite Verification](screenshots/test_suite_verification.png)
+![Test Suite Verification](images/test_suite_verification.png)
 *Figure 3: JUnit test runner output confirming successful verification of `testEnrichmentRoute` and `testTransformRoute` using mock assertions.*
 
 ---
