@@ -1,4 +1,4 @@
-# Lab 6: Testing Apache Camel Routes with JUnit 5
+# Module 4: Testing Apache Camel Routes with JUnit 5
 
 [![Java](https://img.shields.io/badge/Java-11%20%7C%2017%20%7C%2021-orange?style=flat-square&logo=openjdk)](https://www.oracle.com/java/)
 [![Apache Camel](https://img.shields.io/badge/Apache%20Camel-3.20.2-red?style=flat-square&logo=apachecamel)](https://camel.apache.org/)
@@ -9,7 +9,7 @@
 
 ## Overview
 
-This repository contains the implementation and test suite for **Lab 6: Testing Camel Routes with JUnit**. The project demonstrates enterprise integration patterns using **Apache Camel**, robust unit and integration testing with **JUnit 5** and `CamelTestSupport`, message validation via **XPath**, and message transformation workflows.
+This repository contains the implementation and test suite for **Module 4: Testing Camel Routes with JUnit**. The project demonstrates enterprise integration patterns using **Apache Camel**, robust unit and integration testing with **JUnit 5** and `CamelTestSupport`, message validation via **XPath**, and message transformation workflows.
 
 ---
 
@@ -26,7 +26,7 @@ The project is organized into standard Maven source and test directories:
 ### 1. Running the Test Suite (`mvn clean test`)
 The test suite validates route creation, high/medium/low priority routing branches, XPath validations, exception handling for invalid payloads, and data transformation headers. Executing the test runner verifies that all components operate correctly within the Camel execution context.
 
-![Test Suite Execution and Compilation](Screenshot (552).png)
+![Test Suite Execution and Compilation](images/Screenshot%20(552).png)
 
 As shown in the terminal output above, all **8 test cases** executed successfully with **zero failures or errors**, resulting in a successful build (`BUILD SUCCESS`).
 
@@ -36,7 +36,7 @@ As shown in the terminal output above, all **8 test cases** executed successfull
 
 Further verification of the parallel test lifecycle shows the cleanup, engine orchestration, and graceful context shutdown managed by JUnit 5 and Apache Camel.
 
-![Full Test Execution Log](Screenshot (553).png)
+![Full Test Execution Log](images/Screenshot%20(553).png)
 
 ---
 
@@ -48,7 +48,7 @@ Maven generates plain-text execution reports under `target/surefire-reports/` to
 cat target/surefire-reports/com.example.camel.OrderProcessingRouteTest.txt
 ```
 
-![Surefire Report Verification](Screenshot (554).png)
+![Surefire Report Verification](images/Screenshot%20(554).png)
 
 ---
 
