@@ -1,4 +1,4 @@
-# Lab 16: Dynamic Routing and Performance Testing with Apache Camel
+# Module 14: Dynamic Routing and Performance Testing with Apache Camel
 
 <p align="left">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository features **Lab 16: Dynamic Routing with Apache Camel**, an enterprise integration project focusing on dynamic message routing, centralized rule engines, and concurrent performance testing. Built with Java, Apache Camel, and Maven, the application exposes HTTP endpoints via embedded Jetty to evaluate incoming JSON payloads dynamically and dispatch them to appropriate processing departments, priority queues, and regional handlers.
+This repository features **Dynamic Routing with Apache Camel**, an enterprise integration project focusing on dynamic message routing, centralized rule engines, and concurrent performance testing. Built with Java, Apache Camel, and Maven, the application exposes HTTP endpoints via embedded Jetty to evaluate incoming JSON payloads dynamically and dispatch them to appropriate processing departments, priority queues, and regional handlers.
 
 ---
 
@@ -51,4 +51,4 @@ java -cp target/classes com.example.routing.PerformanceTest
 
 ## Conclusion
 
-Lab 16 successfully demonstrates advanced enterprise integration patterns using Apache Camel. By combining external rule engines, dynamic recipient lists, and robust multithreaded performance benchmarking, this project establishes production-ready competencies in building scalable, loosely coupled microservices and message-driven architectures.
+Module 14 successfully demonstrates advanced enterprise integration patterns using Apache Camel. By combining external rule engines, dynamic recipient lists, and robust multithreaded performance benchmarking, this project establishes production-ready competencies in building scalable, loosely coupled microservices and message-driven architectures.
