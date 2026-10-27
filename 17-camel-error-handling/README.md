@@ -53,7 +53,7 @@ mvn clean package -DskipTests
 ```
 
 ### 📸 Compilation Verification
-![Maven Clean Compile & Package Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/screenshots/Screenshot_595.png)
+![Maven Clean Compile & Package Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/images/Screenshot%20%28595%29.png)
 
 *Figure 1: Successful Maven compilation (`BUILD SUCCESS`) showing 7 source files compiled for `camel-error-handling-1.0.0.jar`.*
 
@@ -75,7 +75,7 @@ mvn exec:java > application.log 2>&1 &
 ```
 
 ### 📸 Runtime Load Test Analysis
-![Runtime Load Test Execution Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/screenshots/Screenshot_596.png)
+![Runtime Load Test Execution Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/images/Screenshot%20%28596%29.png)
 
 *Figure 2: Real-time analysis demonstrating 74 total messages processed across all error-handling routes with retry counts, DLQ isolations, and fallback executions.*
 
@@ -86,8 +86,8 @@ mvn exec:java > application.log 2>&1 &
 Running the `./generate-test-report.sh` script produces an executive summary of performance across all integration patterns:
 
 ### 📸 Generated Test Report & Process Cleanup
-![Final Test Report and Cleanup Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/screenshots/Screenshot_597.png)
-![Application Process Shutdown Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/screenshots/Screenshot_598.png)
+![Final Test Report and Cleanup Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/images/Screenshot%20%28597%29.png)
+![Application Process Shutdown Screenshot](https://raw.githubusercontent.com/SecuredByRup/apache-camel-integration-projects/main/17-camel-error-handling/images/Screenshot%20%28598%29.png)
 
 *Figures 3 & 4: Detailed test metrics report highlighting 77 retry attempts, 57 DLQ routing events, 64 fallback events, and graceful process termination via `pkill`.*
 
@@ -125,16 +125,3 @@ Running the `./generate-test-report.sh` script produces an executive summary of 
 ## 🎯 Conclusion
 
 This lab successfully demonstrates the resilience and enterprise reliability of **Apache Camel 3.x**. By orchestrating automated retries, isolating terminal failures in Dead Letter Queues, and executing graceful fallback logic, the application maintains continuous operation and message visibility even under heavy simulated failure rates.
-EOF
-```
-
----
-
-I have generated the document editor containing your formatted `README.md` file. You can download or copy it directly for your repository!
-
-<FollowUp>
-Would you like help with anything else on this repository or your next integration lab?
-</FollowUp>
-
-<ElicitationsGroup>
-</ElicitationsGroup>
