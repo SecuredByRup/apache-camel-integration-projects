@@ -9,7 +9,7 @@
 
 ## Overview
 
-This repository contains the implementation and test suite for **Module 4: Testing Camel Routes with JUnit**. The project demonstrates enterprise integration patterns using **Apache Camel**, robust unit and integration testing with **JUnit 5** and `CamelTestSupport`, message validation via **XPath**, and message transformation workflows.
+This project contains the implementation and test suite for **Module 4: Testing Camel Routes with JUnit**. The project demonstrates enterprise integration patterns using **Apache Camel**, robust unit and integration testing with **JUnit 5** and `CamelTestSupport`, message validation via **XPath**, and message transformation workflows.
 
 ---
 
@@ -54,4 +54,4 @@ cat target/surefire-reports/com.example.camel.OrderProcessingRouteTest.txt
 
 ## Conclusion
 
-Lab 6 successfully bridges the gap between enterprise route definition and automated integration testing. By utilizing Apache Camel's testing framework (`CamelTestSupport`) alongside `isMockEndpointsAndSkip()`, we are able to isolate routing components, simulate external dependencies or missing endpoints, and perform precise assertions on message bodies and headers. This ensures high reliability, maintainability, and confidence when deploying complex integration pipelines in production environments.
+This project successfully bridges the gap between enterprise route definition and automated integration testing. By utilizing Apache Camel's testing framework (`CamelTestSupport`) alongside `isMockEndpointsAndSkip()`, we are able to isolate routing components, simulate external dependencies or missing endpoints, and perform precise assertions on message bodies and headers. This ensures high reliability, maintainability, and confidence when deploying complex integration pipelines in production environments.
