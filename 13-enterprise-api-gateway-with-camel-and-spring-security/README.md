@@ -10,7 +10,7 @@
 
 ## Overview
 
-This repository contains a comprehensive implementation of the **API Gateway Pattern** utilizing **Apache Camel**, **Spring Boot**, and **Spring Security**. The gateway acts as a secure, unified single entry point for a distributed microservices architecture, managing request routing, authentication, rate-limiting, fault tolerance, and multi-service response aggregation.
+This project contains a comprehensive implementation of the **API Gateway Pattern** utilizing **Apache Camel**, **Spring Boot**, and **Spring Security**. The gateway acts as a secure, unified single entry point for a distributed microservices architecture, managing request routing, authentication, rate-limiting, fault tolerance, and multi-service response aggregation.
 
 ---
 
@@ -59,7 +59,7 @@ mvn spring-boot:run
 #### Application Startup Verification
 When started successfully, Spring Boot initializes the application context on port `8090` (for Actuator metrics), while Apache Camel and Jetty run the API Gateway on port `8080` alongside mock microservice instances on ports `8081`, `8082`, and `8083`.
 
-![Application Startup and Initialization](Screenshot%20(578).png)
+![Application Startup and Initialization](images/Screenshot%20(578).png)
 
 ---
 
@@ -84,7 +84,7 @@ chmod +x test-rate-limiting.sh
 ./test-rate-limiting.sh
 ```
 
-![Rate Limiting Script Execution](Screenshot%20(579).jpg)
+![Rate Limiting Script Execution](images/Screenshot%20(579).png)
 
 ### 3. Concurrent Performance Testing
 Evaluate the throughput and latency of the API Gateway under concurrent load conditions:
@@ -94,10 +94,10 @@ chmod +x performance-test.sh
 ./performance-test.sh
 ```
 
-![Performance and Concurrent Load Testing](Screenshot%20(581).jpg)
+![Performance and Concurrent Load Testing](images/Screenshot%20(581).png)
 
 ---
 
 ## Conclusion
 
-The successful implementation of this lab demonstrates how an enterprise-grade API Gateway can be constructed using lightweight integration frameworks like Apache Camel and Spring Boot. By centralizing core infrastructural concerns—such as security enforcement, rate-limiting, error handling, and parallel response aggregation—this architecture significantly reduces client-side complexity, enhances system resilience, and establishes a secure boundary for modern microservices ecosystems.
+The successful implementation of this project demonstrates how an enterprise-grade API Gateway can be constructed using lightweight integration frameworks like Apache Camel and Spring Boot. By centralizing core infrastructural concerns—such as security enforcement, rate-limiting, error handling, and parallel response aggregation—this architecture significantly reduces client-side complexity, enhances system resilience, and establishes a secure boundary for modern microservices ecosystems.
