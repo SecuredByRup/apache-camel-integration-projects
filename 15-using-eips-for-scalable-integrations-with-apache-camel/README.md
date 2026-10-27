@@ -1,4 +1,4 @@
-# Lab 17: Using EIPs for Scalable Integrations with Apache Camel
+# Module 15: Using EIPs for Scalable Integrations with Apache Camel
 
 <p align="left">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
@@ -9,7 +9,7 @@
 
 ## Overview
 
-This repository features **Lab 17: Using EIPs for Scalable Integrations**, an enterprise integration project demonstrating foundational Enterprise Integration Patterns (EIPs) using Apache Camel 3.20. The application orchestrates complex composite order processing workflows by implementing the **Splitter**, **Aggregator**, and **Recipient List** patterns to achieve scalable, loosely coupled, and resilient message processing.
+This repository features **Using EIPs for Scalable Integrations**, an enterprise integration project demonstrating foundational Enterprise Integration Patterns (EIPs) using Apache Camel 3.20. The application orchestrates complex composite order processing workflows by implementing the **Splitter**, **Aggregator**, and **Recipient List** patterns to achieve scalable, loosely coupled, and resilient message processing.
 
 ---
 
@@ -45,4 +45,4 @@ mvn clean compile exec:java -Dexec.mainClass="com.alnafi.camel.eip.CompleteEIPAp
 
 ## Conclusion
 
-Lab 17 demonstrates the core concepts of building scalable enterprise integration architectures using Apache Camel. By successfully combining the Splitter, Aggregator, and Recipient List patterns, this project proves production-ready capability in handling complex message flows, maintaining data consistency with correlation IDs, and dynamically fanning out data to decoupled microservices.
+This project demonstrates the core concepts of building scalable enterprise integration architectures using Apache Camel. By successfully combining the Splitter, Aggregator, and Recipient List patterns, this project proves production-ready capability in handling complex message flows, maintaining data consistency with correlation IDs, and dynamically fanning out data to decoupled microservices.
