@@ -1,4 +1,4 @@
-# Lab 11: Exposing RESTful APIs with Camel
+# Module 9: Exposing RESTful APIs with Camel
 
 [![Java](https://img.shields.io/badge/Java-11-orange.svg)](https://www.oracle.com/java/)
 [![Apache Camel](https://img.shields.io/badge/Apache%20Camel-3.20.0-blue.svg)](https://camel.apache.org/)
@@ -10,7 +10,7 @@
 
 ## Overview
 
-**Lab 11: Exposing RESTful APIs with Camel** demonstrates how to design, configure, and secure enterprise-grade RESTful web services using **Apache Camel REST DSL**, **Jetty HTTP Server**, and **Jackson** for automated JSON marshalling/unmarshalling. The lab emphasizes clean integration patterns, robust input request validation, and standard HTTP response status code handling across microservices.
+**Exposing RESTful APIs with Camel** demonstrates how to design, configure, and secure enterprise-grade RESTful web services using **Apache Camel REST DSL**, **Jetty HTTP Server**, and **Jackson** for automated JSON marshalling/unmarshalling. The lab emphasizes clean integration patterns, robust input request validation, and standard HTTP response status code handling across microservices.
 
 ---
 
@@ -42,17 +42,17 @@
 ### 1. Application Startup & Initialization
 The standalone Java application boots successfully via Maven execution, initializing the Apache Camel context, loading route builders, and launching the Jetty HTTP connector on port `8080`.
 
-![Application Startup](Screenshot%20(570).png)
+![Application Startup](images/Screenshot%20(570).png)
 
 ### 2. CRUD Operations & Successful Retrieval
 Retrieving initial seed records and successfully creating a new user (`Alice Cooper`, ID `4`) via `cURL` requests verifies accurate routing and JSON serialization.
 
-![CRUD Testing and User Creation](Screenshot%20(571).jpg)
+![CRUD Testing and User Creation](images/Screenshot%20(571).png)
 
 ### 3. Request Validation & Error Handling
 Testing invalid payloads (such as omitting required fields like email) successfully triggers routing validation logic, returning an HTTP `400 Bad Request` with structured JSON error feedback.
 
-![Request Validation Testing](Screenshot%20(572).jpg)
+![Request Validation Testing](images/Screenshot%20(572).png)
 
 ---
 
