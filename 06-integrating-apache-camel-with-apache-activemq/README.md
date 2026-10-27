@@ -1,4 +1,4 @@
-# Lab 8: Integrating Apache Camel with Apache ActiveMQ
+# Module 6: Integrating Apache Camel with Apache ActiveMQ
 
 <p align="center">
   <img src="https://img.shields.io/badge/Apache%20Camel-D00000?style=for-the-badge&logo=apachecamel&logoColor=white" alt="Apache Camel" />
@@ -22,7 +22,7 @@ In this task, Apache ActiveMQ Classic (v5.18.3) was downloaded, configured, and 
   curl -s -o /dev/null -w "HTTP status: %{http_code}\n" http://localhost:8161/admin/
   ```
 
-![ActiveMQ Setup & Maven Build Verification](Screenshot%20(563).png)
+![ActiveMQ Setup & Maven Build Verification](images/Screenshot%20(563).png)
 *Figure 1: Verification of ActiveMQ broker status, active listening ports, HTTP 401 web console authentication prompt, and successful Maven compilation (`BUILD SUCCESS`).*
 
 ---
@@ -33,7 +33,7 @@ A Maven project (`camel-activemq-integration`) was established with dependencies
 2. **Order Processing Route:** Evaluates order messages using content-based routing (`choice()`), routing approved orders to `fulfillment.queue` and pending orders to `review.queue`.
 3. **Risky Processing Route:** Simulates random processing failures to demonstrate dead-letter error handling routing to `dead.letter.queue`.
 
-![Camel Route Execution Logs](Screenshot%20(560).png)
+![Camel Route Execution Logs](images/Screenshot%20(560).png)
 *Figure 2: Camel application runtime logs displaying route initialization and message transformation execution.*
 
 ---
@@ -44,16 +44,16 @@ Interactive `MessageSender` and `MessageReceiver` utilities were developed to va
 ### Sending Messages
 Using the `MessageSender` utility, test payloads such as `hello camel` were published to `input.queue`.
 
-![Message Sender Utility](Screenshot%20(557).jpg)
+![Message Sender Utility](images/Screenshot%20(557).png)
 *Figure 3: Interactive `MessageSender` console menu successfully pushing a test message to `input.queue`.*
 
 ### Receiving Transformed Messages
 Using the `MessageReceiver` utility, messages were consumed from `output.queue` to inspect the transformed payload.
 
-![Message Receiver Utility](Screenshot%20(558).jpg)
+![Message Receiver Utility](images/Screenshot%20(558).png)
 *Figure 4: Interactive `MessageReceiver` console capturing the processed message with timestamp and uppercase formatting.*
 
 ---
 
 ## Conclusion
-Lab 8 successfully demonstrated how to seamlessly couple Apache Camel integration routes with Apache ActiveMQ as an enterprise messaging backbone. Through hands-on configuration, route development, and interactive testing utilities, we established a resilient, decoupled messaging architecture capable of handling message transformation, conditional content-based routing, and automated error management.
+This project successfully demonstrated how to seamlessly couple Apache Camel integration routes with Apache ActiveMQ as an enterprise messaging backbone. Through hands-on configuration, route development, and interactive testing utilities, we established a resilient, decoupled messaging architecture capable of handling message transformation, conditional content-based routing, and automated error management.
