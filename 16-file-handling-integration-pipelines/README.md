@@ -1,4 +1,4 @@
-# Lab 18: Apache Camel File Handling & Integration Pipelines
+# Module 16: Apache Camel File Handling & Integration Pipelines
 
 ![Apache Camel](https://img.shields.io/badge/Apache%20Camel-3.20.0-orange?style=for-the-badge&logo=apachecamel&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-11-blue?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -49,7 +49,7 @@ camel-file-handling-lab/
 ```
 
 ### Clean Workspace Verification
-![Workspace Directory Structure](./Screenshot%20\(588\).jpg)
+![Workspace Directory Structure](images/Screenshot%20%28589%29.png)
 
 ---
 
@@ -79,11 +79,11 @@ camel-file-handling-lab/
 ### Execution Outputs & Logs
 The following captured outputs confirm full route operation across basic file processing, remote network protocols, content-based routing rules, and error trapping:
 
-![Basic, FTP, SFTP, and Advanced Outputs](./Screenshot%20\(589\).jpg)
+![Basic, FTP, SFTP, and Advanced Outputs](images/Screenshot%20%28589%29.png)
 
-![Advanced Routing & Error Folder Verification](./Screenshot%20\(590\).jpg)
+![Advanced Routing & Error Folder Verification](images/Screenshot%20%28590%29.png)
 
-![Size and Extension Routing Verification](./Screenshot%20\(591\).jpg)
+![Size and Extension Routing Verification](images/Screenshot%20%28591%29.png)
 
 ---
 
@@ -108,4 +108,4 @@ The following captured outputs confirm full route operation across basic file pr
 
 ## Conclusion
 
-Lab 18 successfully validates Apache Camel's capability to orchestrate complex enterprise integration patterns (EIP) with minimal boilerplate. Key achievements include setting up multi-protocol file routes (FTP/SFTP), implementing dynamic content- and attribute-based enterprise routing, and establishing resilient exception handling workflows.
+This project successfully validates Apache Camel's capability to orchestrate complex enterprise integration patterns (EIP) with minimal boilerplate. Key achievements include setting up multi-protocol file routes (FTP/SFTP), implementing dynamic content- and attribute-based enterprise routing, and establishing resilient exception handling workflows.
