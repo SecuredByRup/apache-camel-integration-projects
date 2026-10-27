@@ -1,4 +1,4 @@
-# Apache Camel Distributed Transactions (Lab 10)
+# Apache Camel Distributed Transactions (Module 8)
 
 [![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-2.7.8-brightgreen?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
@@ -44,17 +44,17 @@ mvn clean spring-boot:run
 ### 1. Application Startup & Initialization
 The application successfully boots up, starts the embedded ActiveMQ XA broker, and initializes the Atomikos transaction coordinator.
 
-![Application Startup](Screenshot%20(568).png)
+![Application Startup](images/Screenshot%20(568).png)
 
 ### 2. Successful Transaction Commit (Valid Order)
 When a valid order is submitted (`/api/test/send-valid-order`), the transaction commits successfully across both resources: the order status is marked as `CONFIRMED`, and the product inventory (`Laptop`) is atomically decremented.
 
-![Valid Order Commit & Inventory Update](Screenshot%20(567).jpg)
+![Valid Order Commit & Inventory Update](images/Screenshot%20(567).png)
 
 ### 3. Automatic Transaction Rollback (Insufficient Inventory)
 When an order exceeding available stock (`/api/test/send-insufficient-inventory-order`) is processed, the route catches the exception, triggers the error handler, and Atomikos safely rolls back all operations across the database and messaging queues, leaving inventory counts untouched.
 
-![Transaction Rollback on Insufficient Inventory](Screenshot%20(569).png)
+![Transaction Rollback on Insufficient Inventory](images/Screenshot%20(569).png)
 
 ---
 
@@ -72,4 +72,4 @@ When an order exceeding available stock (`/api/test/send-insufficient-inventory-
 ---
 
 ## 💡 Conclusion
-This lab successfully showcases enterprise-grade transaction handling in Apache Camel. By integrating Atomikos with XA-compliant datasources and connection factories, we eliminate the risk of partial failures (such as a database write succeeding while a message broker update fails), guaranteeing true ACID compliance across distributed systems.
+This project successfully showcases enterprise-grade transaction handling in Apache Camel. By integrating Atomikos with XA-compliant datasources and connection factories, we eliminate the risk of partial failures (such as a database write succeeding while a message broker update fails), guaranteeing true ACID compliance across distributed systems.
