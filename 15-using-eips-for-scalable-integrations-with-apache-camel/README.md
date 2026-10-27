@@ -30,7 +30,7 @@ The project model, data structures, dynamic resolvers, and Camel routes are comp
 mvn clean compile
 ```
 
-![Build Verification](Screenshot%20%28586%29.png)
+![Build Verification](images/Screenshot%20%28586%29.png)
 
 ### 2. Complete End-to-End EIP Route Execution
 The complete application initiates the Apache Camel context, triggering automated order generation, splitting, individual item processing, re-aggregation with tax calculations, and dynamic distribution to downstream recipient queues.
@@ -39,7 +39,7 @@ The complete application initiates the Apache Camel context, triggering automate
 mvn clean compile exec:java -Dexec.mainClass="com.alnafi.camel.eip.CompleteEIPApplication"
 ```
 
-![Complete EIP Execution](Screenshot%20%28587%29.png)
+![Complete EIP Execution](images/Screenshot%20%28587%29.png)
 
 ---
 
