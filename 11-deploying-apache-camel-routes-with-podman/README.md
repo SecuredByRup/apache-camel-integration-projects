@@ -1,4 +1,4 @@
-# Lab 13: Deploying & Running Apache Camel Routes with Podman
+# Module 11: Deploying & Running Apache Camel Routes with Podman
 
 An enterprise integration project demonstrating timer-based file processing, JSON message transformation, and REST API development using **Apache Camel**, **Maven**, and containerized with **Podman**.
 
@@ -72,9 +72,9 @@ Test the containerized REST API routes using `curl`:
 
 The terminal execution below demonstrates a successful Maven build (`BUILD SUCCESS`) and verifies the creation of the local Podman image (`localhost/local-camel-app:latest`):
 
-![Execution and Build Verification](Screenshot%20(577).png)
+![Execution and Build Verification](images/Screenshot%20(577).png)
 
 ---
 
 ## 📝 Conclusion
-In this lab, we successfully built, tested, and containerized enterprise integration routes using Apache Camel and Podman. By implementing timer-based file logging, JSON data transformations, and Undertow-based REST APIs, we demonstrated core cloud-native integration patterns. Packaging the application into an executable fat JAR and building a custom container image bridges traditional Java development with modern containerized microservices architectures, providing essential skills for enterprise deployment and DevOps workflows.
+We have successfully built, tested, and containerized enterprise integration routes using Apache Camel and Podman. By implementing timer-based file logging, JSON data transformations, and Undertow-based REST APIs, we demonstrated core cloud-native integration patterns. Packaging the application into an executable fat JAR and building a custom container image bridges traditional Java development with modern containerized microservices architectures, providing essential skills for enterprise deployment and DevOps workflows.
