@@ -32,7 +32,7 @@ The application initializes the Apache Camel Main context, binding the embedded 
 mvn exec:java -Dexec.mainClass="com.example.routing.AdvancedDynamicRouting"
 ```
 
-![Application Startup](screenshots/Screenshot_585.png)
+![Application Startup](images/Screenshot%20%28585%29.png)
 
 ### 2. Functional & Performance Test Execution
 Incoming HTTP POST requests are processed through automated test scripts to validate functional correctness (`Product order routed successfully` and `Complex order processed`), followed by a 50-request concurrent load test yielding zero failures.
@@ -45,7 +45,7 @@ Incoming HTTP POST requests are processed through automated test scripts to vali
 java -cp target/classes com.example.routing.PerformanceTest
 ```
 
-![Test Results and Performance Load Test](screenshots/Screenshot_584.png)
+![Test Results and Performance Load Test](images/Screenshot%20%28584%29.png)
 
 ---
 
