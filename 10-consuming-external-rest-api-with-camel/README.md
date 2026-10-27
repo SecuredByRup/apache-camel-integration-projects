@@ -1,4 +1,4 @@
-# Lab 12: Consuming External REST APIs with Camel
+# Module 10: Consuming External REST APIs with Camel
 
 [![Java](https://img.shields.io/badge/Java-11-orange.svg)](https://www.oracle.com/java/)
 [![Apache Camel](https://img.shields.io/badge/Apache%20Camel-3.20.2-blue.svg)](https://camel.apache.org/)
@@ -10,7 +10,7 @@
 
 ## Overview
 
-**Lab 12: Consuming External REST APIs with Camel** demonstrates how to integrate external HTTP services into a microservices architecture using **Apache Camel**, the **Camel HTTP Component**, and **Jackson** for JSON data processing. This lab covers polling external REST endpoints via timer components, transforming and enriching JSON payloads using custom Java processors, handling transport-level exceptions and non-200 HTTP error codes, and implementing automated health monitoring.
+**Consuming External REST APIs with Camel** demonstrates how to integrate external HTTP services into a microservices architecture using **Apache Camel**, the **Camel HTTP Component**, and **Jackson** for JSON data processing. This lab covers polling external REST endpoints via timer components, transforming and enriching JSON payloads using custom Java processors, handling transport-level exceptions and non-200 HTTP error codes, and implementing automated health monitoring.
 
 ---
 
@@ -67,7 +67,7 @@ mvn exec:java -Dexec.mainClass="com.example.camel.CompleteTestApplication"
 ```
 
 **Console Output & Execution Verification:**
-![Maven Build & Execution Success](Screenshot (574).png)
+![Maven Build & Execution Success](images/Screenshot%20(574).png)
 
 ### 2. Manual API Verification with `curl`
 Independent validation of the REST endpoints and error-handling logic was performed via `curl`:
@@ -83,13 +83,13 @@ curl -s -o /dev/null -w "HTTP Status: %{http_code}\n" "https://jsonplaceholder.t
 ```
 
 **Curl Verification Output:**
-![Curl Verification Output](Screenshot (575).png)
+![Curl Verification Output](images/Screenshot%20(575).png)
 
 ---
 
 ## Conclusion
 
-In this lab, we successfully designed and implemented an enterprise-grade REST consumer integration pipeline using Apache Camel. Key accomplishments include:
+In this project, we successfully designed and implemented an enterprise-grade REST consumer integration pipeline using Apache Camel. Key accomplishments include:
 * **Robust HTTP Integration:** Configured Camel routes to consume external REST endpoints with appropriate headers, methods, and bridge parameters.
 * **Advanced JSON Processing:** Reshaped and enhanced raw JSON data structures using custom Jackson processors and split-jsonpath expressions.
 * **Resilient Error Management:** Implemented dual-tier error handling for transport exceptions and non-200 HTTP responses (such as 404 missing resources and 429 rate limits).
