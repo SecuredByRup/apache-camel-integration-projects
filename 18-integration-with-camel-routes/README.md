@@ -1,4 +1,4 @@
-# Lab 20: End-to-End Integration with Apache Camel Routes
+# Module 18: End-to-End Integration with Apache Camel Routes
 
 ![Apache Camel](https://img.shields.io/badge/Apache%20Camel-3.20.2-DX3B2F?style=for-the-badge&logo=apachecamel&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-11-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
@@ -124,7 +124,7 @@ from("direct:route-order")
 ### 1. File Ingestion, Content Enrichment, and Pipeline Execution Logs
 When dropping a sample CSV file (`order1.csv`) containing `ORD-1003,CUST001,1250.00`, Camel picks up the file, parses the data, enriches customer metadata, assigns `HIGH` tier status, and handles output destinations:
 
-![Pipeline Execution Logs](./screenshots/Screenshot_602.png)
+![Pipeline Execution Logs](./images/Screenshot%20%28602%29.png)
 
 *Figure 1: Terminal output displaying route startup, CSV parsing, JDBC lookup result, enrichment confirmation, and Dead Letter Channel retry attempts on handled exceptions.*
 
@@ -133,7 +133,7 @@ When dropping a sample CSV file (`order1.csv`) containing `ORD-1003,CUST001,1250
 ### 2. Output File Generation & Database Persistence Verification
 Verification of generated confirmation report text files, file movements (`data/processed/`), and SQL record persistence in PostgreSQL:
 
-![Output Verification and DB Persistence](./screenshots/Screenshot_603.png)
+![Output Verification and DB Persistence](./images/Screenshot%20%28603%29.png)
 
 *Figure 2: Execution output confirming generated order confirmation file (`order_ORD-1003_confirmation.txt`), file relocation to `data/processed/`, and successful row insertion into the `orders` PostgreSQL table (`PROCESSED` status).*
 
